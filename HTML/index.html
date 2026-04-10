@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lv">
 
 <head>
     <meta charset="UTF-8">
@@ -7,56 +7,85 @@
     <title>Mans datorikas portfolio</title>
     <link rel="stylesheet" href="CSS/mansStills.css">
 </head>
+
 <body>
-    <h1>Mans datorikas portfolio</h1>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div>
+                <p class="eyebrow">Portfolio</p>
+                <h1>Mans datorikas portfolio</h1>
+                <p class="hero-text">Datoru projekti, grafika un 3D modelēšana. Skatīsimies, kas ir paveikts un kā varam padarīt to pievilcīgāku.</p>
+            </div>
 
-    <h2>Tekstapstrāde</h2>
-    <p>
-        Ir bijusi tekstaprāde (:
-        statstijums stastijums utt
-
-    </p>
-     <h2>Attēlu apstrāde</h2>
-     <h3>Rastrgrafika</h3>
-    <p>
-        <img src="logo.svg" width="200" height="200">
-        <div>
-        te ir rastrgrafika - logo. tur var redzet logo ko es izveidoju
+            <nav class="site-nav" aria-label="Galvenā navigācija">
+                <a href="#text">Tekstapstrāde</a>
+                <a href="#graphics">Attēlu apstrāde</a>
+                <a href="#video">Video</a>
+                <a href="#spreadsheet">Izklājlapas</a>
+                <a href="skola.html">Skola</a>
+            </nav>
         </div>
-    </p>
-    <h3>Vektorgrafika</h3>
-    <p >
-       <img source="-" alt="Gif.gif">
-    </p>
-    <h2>3D modelēšana</h2>
-    <div>
-    <p>
-        3d printera kubs iznaca sadi
-    </p>
-    <img src="2026-02-20 12_45_12.jpg" style="width:10%">
-    </div>
-    <h2>Video</h2>
-    <video controls>
-<source src="video.mp4" type="video/mp4">
-    </video>
-    <a href="https://youtube.com"> Reklāma</a>
-    <p>
-        bus video, sobrid nestrada.
-    </p>
+    </header>
 
-    <h2>Izklājlapas</h2>
-    <p>
-        Te ir lejupieladejams fails:
-    </p>
-    <a href="aprēķini.xlsx"download> Aprēķini  </a>
-<p>
-    <a href="skola.html"> Skola </a>
-</p> 
+    <main class="container">
+        <section id="text" class="card highlight">
+            <h2>Tekstapstrāde</h2>
+            <p>Šeit ir aprakstīts tekstu apstrādes uzdevums, kas ietver rakstīšanu, statistiku un stāstījumu. Tas var kalpot kā portfolio sadaļa, kurā redzams darbs ar vārdiem un saturu.</p>
+        </section>
 
-  <!--  <p>
-<a href="https://www.google.com"> Google  </a>
+        <section id="graphics" class="section-grid">
+            <div class="card">
+                <h2>Attēlu apstrāde</h2>
+                <div class="card-grid">
+                    <article class="feature-card">
+                        <h3>Rastrgrafika</h3>
+                        <figure>
+                            <img src="logo.svg" alt="Portfolio logo" />
+                            <figcaption>Logotips, kas izveidots kā rastrgrafikas elements.</figcaption>
+                        </figure>
+                    </article>
 
-    </p> -->
+                    <article class="feature-card">
+                        <h3>Vektorgrafika</h3>
+                        <p>Šeit var tikt parādīti vektordizaina piemēri vai grafikas skices, kas strādā skalējami un tīri.</p>
+                        <div class="placeholder">Vektorgrafika</div>
+                    </article>
+                </div>
+            </div>
 
+            <div class="card">
+                <h2>3D modelēšana</h2>
+                <p>3D modelēšana ir daļa no portfeļa, kas parāda radošumu un tehnisko prasmju pielietojumu.</p>
+                <figure>
+                    <img src="2026-02-20 12_45_12.jpg" alt="3D printera kubs" />
+                    <figcaption>3D printera kubs, kas izveidots kā projekta rezultāts.</figcaption>
+                </figure>
+            </div>
+
+            <div class="card">
+                <h2 id="video">Video</h2>
+                <p>Video sadaļā var tikt iekļauti projekti, prezentācijas un demonstrācijas, kas papildina portfeli.</p>
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Tava pārlūkprogramma neatbalsta video atskaņošanu.
+                </video>
+                <a class="button" href="https://youtube.com" target="_blank" rel="noreferrer">Reklāma</a>
+                <p>Šobrīd video saturs nav pieejams, taču vēlāk to var pievienot.</p>
+            </div>
+
+            <div class="card">
+                <h2 id="spreadsheet">Izklājlapas</h2>
+                <p>Lejupielādē aprēķinu failu un apskati izklājlapu struktūru, formulas un prezentāciju.</p>
+                <a class="button" href="aprēķini.xlsx" download>Lejupielādēt aprēķinus</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Mans datorikas portfolio</p>
+        </div>
+    </footer>
 </body>
+
 </html>
