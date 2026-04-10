@@ -66,6 +66,26 @@ a:focus {
     text-decoration: underline;
 }
 
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #005fa3;
+    text-decoration: none;
+}
+
 /* Misc helpers */
 .container {
     padding: 0 1rem;
